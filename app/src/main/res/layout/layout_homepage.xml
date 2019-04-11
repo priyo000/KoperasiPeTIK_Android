@@ -9,7 +9,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="136dp"
+        android:layout_height="204dp"
         android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
@@ -56,23 +56,36 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
     </android.support.constraint.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="179dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="INPUT"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="179dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:text="HISTORY"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        android:outlineSpotShadowColor="@android:color/black">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="180dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:text="INPUT"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/button"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="HISTORY"
+            android:background="@android:color/white"/>
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
